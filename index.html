@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RSA ve SHA256 Şifreleme Aracı</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-animation"></div>
+  <div class="container">
+    <header>
+      <h1><i class="fas fa-lock"></i> RSA ve SHA256 Şifreleme Aracı</h1>
+      <p>Güvenli RSA anahtar üretme, şifreleme, şifre çözme ve SHA256 özeti oluşturma aracı</p>
+    </header>
+    <main>
+      <div class="row">
+        <section class="card">
+          <h2><i class="fas fa-key"></i> RSA Anahtar Üret</h2>
+          <button id="generateKeysBtn" class="btn-primary">
+            <i class="fas fa-key"></i> Anahtarları Üret
+          </button>
+          <div class="form-group">
+            <label for="publicKey">Açık Anahtar (Public Key):</label>
+            <textarea id="publicKey" readonly placeholder="Açık anahtar burada görünecek"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="privateKey">Özel Anahtar (Private Key):</label>
+            <textarea id="privateKey" readonly placeholder="Özel anahtar burada görünecek"></textarea>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2><i class="fas fa-fingerprint"></i> SHA256 Özeti</h2>
+
+          <div class="form-group">
+            <label for="shaSelectType">SEÇİM TÜRÜ</label>
+            <select id="shaSelectType" class="form-control">
+              <option value="text">Metin</option>
+              <option value="file">Dosya</option>
+            </select>
+          </div>
+
+          <div class="form-group" id="shaTextGroup">
+            <label for="shaInput">SHA256 için Metin:</label>
+            <textarea id="shaInput" placeholder="SHA256 özeti oluşturmak için metin girin"></textarea>
+          </div>
+
+          <div class="form-group" id="shaFileGroup" style="display: none;">
+            <label for="shaFile">SHA256 için Dosya:</label>
+            <input type="file" id="shaFile" class="form-control" />
+          </div>
+
+          <button id="shaBtn" class="btn-primary">
+            <i class="fas fa-calculator"></i> Özet Oluştur
+          </button>
+
+          <div class="form-group">
+            <label for="shaOutput">SHA256 Özeti:</label>
+            <textarea id="shaOutput" readonly placeholder="SHA256 özeti burada görünecek"></textarea>
+          </div>
+        </section>
+      </div>
+
+      <div class="row">
+        <section class="card">
+          <h2><i class="fas fa-lock"></i> Metni Şifrele</h2>
+          <div class="form-group">
+            <label for="plainTextEncrypt">Şifrelenecek Metin:</label>
+            <textarea id="plainTextEncrypt" placeholder="Şifrelemek istediğiniz metni girin"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="publicKeyEncrypt">Açık Anahtar:</label>
+            <textarea id="publicKeyEncrypt" placeholder="Açık anahtarınızı yapıştırın veya üstte üretin"></textarea>
+          </div>
+          <button id="encryptBtn" class="btn-primary">
+            <i class="fas fa-lock"></i> Şifrele
+          </button>
+          <div class="form-group">
+            <label for="encryptedText">Şifrelenmiş Metin:</label>
+            <textarea id="encryptedText" readonly placeholder="Şifrelenmiş metin burada görünecek"></textarea>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2><i class="fas fa-unlock"></i> Şifreyi Çöz</h2>
+          <div class="form-group">
+            <label for="encryptedTextInput">Şifrelenmiş Metin:</label>
+            <textarea id="encryptedTextInput" placeholder="Çözmek istediğiniz şifrelenmiş metni girin"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="privateKeyDecrypt">Özel Anahtar:</label>
+            <textarea id="privateKeyDecrypt" placeholder="Özel anahtarınızı yapıştırın veya üstte üretin"></textarea>
+          </div>
+          <button id="decryptBtn" class="btn-primary">
+            <i class="fas fa-unlock"></i> Şifreyi Çöz
+          </button>
+          <div class="form-group">
+            <label for="decryptedText">Çözülmüş Metin:</label>
+            <textarea id="decryptedText" readonly placeholder="Çözülmüş metin burada görünecek"></textarea>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>jsrsasign ve CryptoJS kütüphaneleri kullanılarak geliştirilmiştir &copy; <span id="year"></span></p>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsrsasign/10.8.6/jsrsasign-all-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
