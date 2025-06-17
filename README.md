@@ -76,7 +76,16 @@ b0e522ae4a51dd8aa03fd8af7867aaaab5c9aef12220eeab5cc44052e4613e48
 
 ![image](https://github.com/user-attachments/assets/27423798-21ac-4c56-a3d8-8ab4c41ee0a1)
 
-SHA256 Özeti Dosya Seçme 
+ SHA256 Özeti Dosya Seçme
+Bu görselde bir dosyayı SHA256 algoritmasıyla özetlemek için işlem yapıyoruz.
+
+Burada, giriş türü olarak “Dosya” seçiyoruz. Yani metin yerine bir dosyanın SHA256 özeti oluşturulacak.
+
+"Choose File" butonuna tıkladığımızda dosya seçme penceresi açılıyor.
+
+Bu kısımda "rapor4.docx" adlı dosyayı özetlemek için seçiyoruz.
+
+Dosya seçildikten sonra "Özet Oluştur" butonuna tıklanarak, dosyanın SHA256 özeti (hash değeri) oluşturulur ve aşağıda gösterilir.
 
 ![image](https://github.com/user-attachments/assets/56a7c8ad-24db-4e92-8ce7-2f79d8b0b000)
 
