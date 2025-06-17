@@ -33,7 +33,31 @@ RSA algoritması, şifrelenmiş metni özel anahtar yardımıyla çözer ve orij
 
 ![image](https://github.com/user-attachments/assets/5b1670e4-a093-45ec-b1c2-f6a158fdefbf)
 
-Şifreyi Çöz
+Aşağıdaki görselde, önceden RSA algoritmasıyla şifrelenmiş bir metnin çözülme (decryption) işlemi açıkça gösterilmektedir.
+"Şifreyi Çöz" Adımı – RSA Decryption
+1. Şifrelenmiş Metin (Soldan alınmış)
+Soldaki "Metni Şifrele" bölümünde "mohamad alkassem" metni açık anahtar ile şifrelenmişti.
+Ortaya çıkan uzun ve karmaşık şifreli metin (base64 formatında) şimdi sağdaki kısma yapıştırılmış.
+
+2. Özel Anahtar (Private Key)
+RSA algoritmasında sadece mesajın alıcısında bulunması gereken gizli anahtar buraya yapıştırılıyor.
+Bu anahtar, şifreyi çözebilmek için gereklidir ve kimseyle paylaşılmamalıdır.
+
+3. [🔓 Şifreyi Çöz] Butonuna Tıklanıyor
+Kullanıcı "Şifreyi Çöz" butonuna bastığında:
+
+RSA algoritması, şifrelenmiş metni alır,
+
+Özel anahtar yardımıyla çözümler,
+
+Ve orijinal metni geri verir.
+
+4. Çözülmüş Metin (Alt Kısımda)
+Metin başarıyla çözülmüş ve aşağıdaki kutuda tekrar "mohamad alkassem" olarak görüntülenmiştir.
+
+Bu, sistemin doğru çalıştığını ve RSA algoritmasının güvenli bir şekilde şifreleme/çözme işlemlerini gerçekleştirdiğini gösterir.
+
+
 
 ![image](https://github.com/user-attachments/assets/7d479c08-a37e-4838-834f-d5de2b2490ce)
 
