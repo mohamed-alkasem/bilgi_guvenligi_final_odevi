@@ -106,3 +106,36 @@ ee153b7bb1b63f60116e4fa3c6a281d4f267b392ace5dd7f4e6b47904c0f885
 ![image](https://github.com/user-attachments/assets/8e2375c7-8ba0-44fd-bbf1-a6eeeca4968b)
 
 
+🔐 Proje Tanımı – RSA ve SHA256 Şifreleme Aracı
+Bu proje, kullanıcıların hem RSA anahtar çifti oluşturmasına, hem de metin veya dosyaları şifreleyip çözmesine ve ayrıca SHA256 özeti üretmesine olanak tanıyan bir web tabanlı şifreleme aracıdır.
+
+⚙️ Projenin Temel Özellikleri:
+🔑 1. RSA Anahtar Çifti Üretme
+Kullanıcı “Anahtarları Üret” butonuna bastığında, 2048 bitlik bir RSA açık ve özel anahtar çifti oluşturulur.
+
+Bu anahtarlar hem metin şifreleme hem de çözme için kullanılır.
+
+Anahtarlar KEYUTIL kütüphanesi ile üretilmektedir.
+
+✍️ 2. Metin Şifreleme (RSA)
+Kullanıcı bir metin girer ve açık anahtar ile bu metin şifrelenir.
+
+Şifreli veri base64 formatında kullanıcıya sunulur.
+
+🔓 3. Şifre Çözme (RSA)
+Kullanıcı şifrelenmiş metni ve özel anahtarı girerek, şifreyi çözebilir.
+
+Çözülen orijinal metin arayüzde görüntülenir.
+
+🔐 4. SHA256 Özeti Oluşturma
+Kullanıcı, isterse bir metin isterse bir dosya için SHA256 özetini (hash) oluşturabilir.
+
+CryptoJS kütüphanesi ile hem metin hem dosya içeriği üzerinden SHA256 özeti hesaplanır.
+
+🚨 5. Uyarı ve Bildirim Sistemi
+Her işlem sonrası kullanıcıya başarı, hata veya uyarı mesajları dinamik olarak gösterilir.
+
+📌 Genel Amaç:
+Bu proje, temel olarak bilgi güvenliği kavramlarını (şifreleme, dijital özet, anahtar yönetimi) öğretmek ve görsel olarak uygulamalı hâle getirmek için geliştirilmiştir.
+Hem asimetrik şifreleme (RSA) hem de kriptografik özetleme (SHA256) algoritmaları pratikte nasıl çalışır, kullanıcı bunu görerek deneyimleyebilir.
+
