@@ -5,7 +5,31 @@ Aşağıdaki görselde RSA şifreleme algoritması için özel (private) ve gene
 ![image](https://github.com/user-attachments/assets/6ef8ded0-ebd6-4d2c-a1e0-a77433c003b1)
 
 
-Metni Şifreleme 
+Aşağıdaki görselde, RSA şifreleme sistemi kullanılarak "mohamad alkassem" metninin nasıl şifrelendiği adım adım gösterilmiştir. İşte detaylı açıklaması:
+1. Metni Şifrele (Soldaki Kısım)
+Şifrelenecek Metin:
+Kullanıcı "mohamad alkassem" metnini yazıyor.
+
+Açık Anahtar (Public Key):
+RSA şifrelemede kullanılan herkesin erişebileceği açık anahtar buraya yapıştırılıyor.
+Bu anahtar, sadece şifreleme işleminde kullanılır.
+
+[🔒 Şifrele] Butonuna Basıldığında:
+RSA algoritması, "mohamad alkassem" metnini alır ve açık anahtarla şifreler.
+
+Şifrelenmiş Metin:
+Alt kısımda, base64 formatında uzun bir şifreli metin oluşur. Bu veriyi sadece özel anahtara sahip olan kişi çözebilir.
+2. Şifreyi Çöz (Sağdaki Kısım)
+Şifrelenmiş Metin:
+Solda oluşturulan şifreli veri buraya kopyalanabilir.
+
+Özel Anahtar (Private Key):
+Bu anahtar sadece alıcıda bulunur ve şifre çözme (decryption) için gereklidir.
+Güvenli ve gizli tutulmalıdır.
+
+[🔓 Şifreyi Çöz] Butonuna Basıldığında:
+RSA algoritması, şifrelenmiş metni özel anahtar yardımıyla çözer ve orijinal metni geri verir:
+"mohamad alkassem".
 
 ![image](https://github.com/user-attachments/assets/5b1670e4-a093-45ec-b1c2-f6a158fdefbf)
 
