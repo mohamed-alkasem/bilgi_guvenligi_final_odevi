@@ -1,7 +1,6 @@
 canlı denemek için https://mohamed-alkasem.github.io/bilgi_guvenligi_final_odevi/
 
-RSA Anahtar Çifti Oluşturma
-Bu arayüz, kullanıcıların RSA şifreleme sistemi için güvenli anahtar çiftleri oluşturmasını sağlar. RSA (Rivest-Shamir-Adleman), modern kriptografinin temel taşlarından biridir ve asimetrik şifreleme için kullanılır.
+Aşağıdaki görselde RSA şifreleme algoritması için özel (private) ve genel (public) anahtarların nasıl üretildiği gösterilmektedir.
 
 ![image](https://github.com/user-attachments/assets/6ef8ded0-ebd6-4d2c-a1e0-a77433c003b1)
 
