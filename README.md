@@ -89,7 +89,19 @@ Dosya seçildikten sonra "Özet Oluştur" butonuna tıklanarak, dosyanın SHA256
 
 ![image](https://github.com/user-attachments/assets/56a7c8ad-24db-4e92-8ce7-2f79d8b0b000)
 
-SHA256 Özeti Dosya Şifrele
+📄 SHA256 Özeti Dosya Şifrele
+Bu görselde, bir dosyanın SHA256 özeti (hash değeri) oluşturulmuştur.
+
+Burada özet oluşturulacak giriş türü olarak “Dosya” seçilmiştir.
+
+Daha sonra, SHA256 özeti alınacak dosya olarak “rapor4.docx” dosyası seçilmiştir.
+
+“Özet Oluştur” butonuna basılarak dosyanın içeriğine göre SHA256 algoritmasıyla özet hesaplanmıştır.
+
+Oluşturulan özet değeri (hash) aşağıda görüntülenmiştir:
+
+ee153b7bb1b63f60116e4fa3c6a281d4f267b392ace5dd7f4e6b47904c0f885
+
 
 ![image](https://github.com/user-attachments/assets/8e2375c7-8ba0-44fd-bbf1-a6eeeca4968b)
 
