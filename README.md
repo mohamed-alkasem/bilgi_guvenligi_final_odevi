@@ -61,7 +61,18 @@ Bu, sistemin doğru çalıştığını ve RSA algoritmasının güvenli bir şek
 
 ![image](https://github.com/user-attachments/assets/7d479c08-a37e-4838-834f-d5de2b2490ce)
 
-SHA256 Özeti Metin Şifrele
+Aşağıdaki görselde, "mohamad alkassem" metni SHA256 özeti (hash) ile şifrelenmektedir.
+🔐 Aşağıdaki Görselde Ne Yapılıyor?
+✅ SHA256 Özeti Oluşturuluyor
+Giriş Metni:
+Sağ tarafta "mohamad alkassem" metni SHA256 için girilmiş.
+
+[🧮 Özet Oluştur] Butonuna Basıldığında:
+SHA256 algoritması bu metni alır ve sabit uzunlukta bir özet (hash) değeri üretir.
+
+SHA256 Özeti (Alt Kısımda):
+Üretilen değer:
+b0e522ae4a51dd8aa03fd8af7867aaaab5c9aef12220eeab5cc44052e4613e48
 
 ![image](https://github.com/user-attachments/assets/27423798-21ac-4c56-a3d8-8ab4c41ee0a1)
 
